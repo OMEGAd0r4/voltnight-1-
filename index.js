@@ -30,10 +30,11 @@ bot.registry.registerDefaults();
 //WELCOME MESSAGE
 bot.on('guildMemberAdd', (member) => {
     const welcomechannel = member.guild.channels.find('name', `general`);
+    const welcomerole = message.guild.roles.find("name", `member`);
     welcomechannel.send({embed: new Discord.RichEmbed()
         .setColor("#4286f4")
         .setTitle("**New Member**")
-        .setDescription(`:busts_in_silhouette:|**Greetings,** ${member}. Welcome to the **Network**.`)});
+        .setDescription(`:busts_in_silhouette:|**Greetings,** ${member}. Welcome to the **Network**.`)}).then(member.addRole(welcomerole.id));
 })
 //WELCOME MESSAGE
 
