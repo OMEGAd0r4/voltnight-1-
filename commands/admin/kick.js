@@ -10,7 +10,7 @@ class kickCommand extends commando.Command{
   {
     super(client, {
       name: 'kick', 
-      group: 'network',
+      group: 'admin',
       memberName: 'kick',
       description: "Kick a user"
     });
