@@ -9,10 +9,10 @@ class kickCommand extends commando.Command{
   constructor(client) 
   {
     super(client, {
-      name: 'kick', 
+      name: 'ban', 
       group: 'admin',
-      memberName: 'kick',
-      description: "Kick a user"
+      memberName: 'ban',
+      description: "bans a user"
     });
   }
   async run (message, args)
