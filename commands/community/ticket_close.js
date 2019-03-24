@@ -10,7 +10,7 @@ class closeCommand extends commando.Command {
     {
       super(client, {
         name: 'close', 
-        group: 'network',
+        group: 'community',
         memberName: 'close',
         description: "Closes a support ticket"
       });
