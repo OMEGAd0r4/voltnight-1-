@@ -5,7 +5,6 @@ const prefix = "!";
 const bot = new commando.Client({
     commandPrefix: prefix
 });
-const Music = require('discord.js-musicbot-addon');
 //PLUGINS
 
 //BOT TOKEN
