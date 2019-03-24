@@ -43,9 +43,9 @@ class kickCommand extends commando.Command{
           .setColor("#4286f4")
           .setTitle('**Kick | Information**')
           .setDescription(`${warnUser}, kicked by ${message.author}`)
-          .addField(`**REASON:**`, warnreason)message.guild.member(warnUser.ban(warnreason));
+          .addField(`**REASON:**`, warnreason)
     
-          message.guild.member(warnUser.ban(warnreason));
+          message.guild.member(warnUser.kick(warnreason));
 
           let logschannel = message.guild.channels.find(`name`, "logs");
           if(!logschannel) return message.channel.send("Couldn't find a channel called ``#logs``.");
