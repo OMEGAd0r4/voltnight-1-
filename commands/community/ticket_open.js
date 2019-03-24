@@ -10,7 +10,7 @@ class ticketCommand extends commando.Command {
     {
       super(client, {
         name: 'new', 
-        group: 'network',
+        group: 'community',
         memberName: 'new',
         description: "Creates a support ticket"
       });
