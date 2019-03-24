@@ -10,7 +10,7 @@ class unmuteCommand extends commando.Command {
     {
       super(client, {
         name: 'unmute', 
-        group: 'network',
+        group: 'admin',
         memberName: 'unmute',
         description: "Unmutes a muted user"
       });
