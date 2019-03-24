@@ -10,7 +10,7 @@ class muteCommand extends commando.Command {
     {
       super(client, {
         name: 'mute', 
-        group: 'network',
+        group: 'admin',
         memberName: 'mute',
         description: "Temporarily mutes a user"
       });
