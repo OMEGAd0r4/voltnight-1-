@@ -10,7 +10,7 @@ class warnCommand extends commando.Command{
   {
     super(client, {
       name: 'warn', 
-      group: 'network',
+      group: 'admin',
       memberName: 'warn',
       description: "Warns a user"
     });
