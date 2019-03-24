@@ -38,6 +38,21 @@ bot.on('guildMemberAdd', (member) => {
 })
 //WELCOME MESSAGE
 
+bot.on('message', function(message) {
+    if (message.content == "!clear") {
+        try {
+            if (message.member.hasPermission("MANAGE_MESSAGES")) {
+                messages = message.channel.fetchMessages();
+                message.channel.bulkDelete(messages);
+            }
+        } catch(e) {
+            message.channel.send("ERROR: ERROR CLEARING CHANNEL.");
+            console.log(e);
+        }
+    }
+
+});
+
 
 
 
